@@ -24,8 +24,8 @@
 #define DEFAULT_SICK_LMS_5XX_MESSAGE_TIMEOUT                  (5000000)                 ///< Max time for reply (usecs)
 #define DEFAULT_SICK_LMS_5XX_STATUS_TIMEOUT                  (60000000)                 ///< Max time it should take to change status
 
-#define SICK_LMS_5XX_SCAN_AREA_MIN_ANGLE                       (15000)                 ///< -50000: -5 degrees (1/10000) degree
-#define SICK_LMS_5XX_SCAN_AREA_MAX_ANGLE                      (1785000)                 ///< 1850000: 185 degrees (1/10000) degree
+#define SICK_LMS_5XX_SCAN_AREA_MIN_ANGLE                       (-50000)                 ///< -50000: -5 degrees (1/10000) degree
+#define SICK_LMS_5XX_SCAN_AREA_MAX_ANGLE                      (1850000)                 ///< 1850000: 185 degrees (1/10000) degree
 
 /* Definition dependencies */
 #include <string>
@@ -51,7 +51,7 @@ namespace SickToolbox {
 
   public:
     
-    static const int SICK_LMS_5XX_MAX_NUM_MEASUREMENTS = 381; // 1141;                         ///< LMS 5xx max number of measurements
+    static const int SICK_LMS_5XX_MAX_NUM_MEASUREMENTS = 1141; // 1141;                         ///< LMS 5xx max number of measurements
 
     /*!
      * \enum sick_lms_5xx_status_t
